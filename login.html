@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac Light Gallery</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="login-light"></div>
+    <div class="login-box">
+        <!-- Register Form
+         untuk form registrasi yang memuat input untuk username, 
+         email, password, dan konfirmasi password -->
+        <form id="registrasiForm" class="register-form">
+            <input type="checkbox" class="input-check" id="input-check-register">          
+            <label for="input-check-register" class="toggle">
+                <span class="text off">off</span>
+                <span class="text on">on</span>
+            </label>
+            <!--Checkbox untuk mengaktifkan atau 
+            menonaktifkan efek visual pada elemen input dan tombol-->
+
+
+            
+            <div class="light"></div>
+
+            <h2>Login</h2>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="person"></ion-icon>
+                </span>
+                <input type="text"  id="nama"  required>
+                <label>Username</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" id="email" name="email" required>
+                <label>Email</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" id="password" name="password" required>
+                <label>Password</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" id="konfirmasiPassword" name="konfirmasiPassword" required>
+                <label>Confirm Password</label>
+                <div class="input-line"></div>
+            </div>
+            <button type="submit">Submit</button>
+            <div class="register-link">
+                <p>Back to <a href="home.html">Home</a></p>
+                <p>Zodiac Light Gallery</p>
+            </div>
+        </form>
+        
+    </div>
+
+    <!--**Validasi Formulir dengan JavaScript**:
+   - JavaScript untuk memvalidasi input pada form login sebelum mengirim data.
+-->
+    <script>const registrasiForm = document.getElementById('registrasiForm');
+
+        registrasiForm.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+        
+            const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const konfirmasiPassword = document.getElementById('konfirmasiPassword').value;
+        
+           
+            if (nama === '' || email === '' || password === '' || konfirmasiPassword === '') {
+                alert('Semua kolom harus diisi!');
+                return;
+            }
+        
+            if (password !== konfirmasiPassword) {
+                alert('Password dan konfirmasi password tidak sama!');
+                return;
+            }
+        
+           
+            alert('Login berhasil!');
+        
+            // Alihkan ke halaman home.html setelah login
+            window.location.href = 'home.html';
+        });</script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

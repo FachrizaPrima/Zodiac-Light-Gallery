@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*font-family: 'roboto', sans-serif;` pada aturan CSS `body` memastikan penggunaan font "Roboto Condensed*/
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(222, 154, 222);
+    font-family: 'roboto',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*`border: 8px solid #fff;` pada aturan CSS `.card` memberikan kontras yang menarik*/
+.card{
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #fff;
+    position: relative;
+}
+
+.card-img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 120px;
+}
+
+/*background: #361f4738;` dan `backdrop-filter: blur(5px);` pada aturan CSS `.card-body` menciptakan efek visual blur */
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #965cbe38;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    transition: 3s;
+}
+
+
+
+.card:hover .card-body{
+    right: 0;
+}
+
+/*card:hover .card-body { right: 0; }
+adalah aturan CSS yang membuat konten kartu bergeser ke posisi kanan 0 saat di-hover, menunjukkan detail lengkap kartu.*/
+
+.card-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card-sub-title{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-info{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+
+
+/*card-btn` adalah aturan CSS yang mengatur tampilan tombol, membuatnya menonjol dan menarik untuk diklik.
+ */
+.card-btn{
+    color: #1f1f1f;
+    background:floralwhite;
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+
+
+

@@ -1,0 +1,147 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Zodiac Light Gallery</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Zodiac Light Gallery</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentangkami.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="staff.html">Staff</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="ubahProfilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="ubahProfilDropdown">
+                <li><a class="dropdown-item" href="staff.html"> Staff</a></li>
+                <li><a class="dropdown-item" href="tentangkami.html">About Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid banner">
+      <div class="contain text-center">
+        <h1 class="display-6">Welcome to our website</h1>
+        <h4 class="display-5"></h4>
+        <p>Search and download any images within a second</p>
+        <div class="container">
+          <div class="search-box">
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search image">
+          </div>
+      
+        </div>
+      </div>
+    </div>
+    
+    <div class="wrapper">
+      <!-- filter Items -->
+      <nav>
+        <div class="items">
+          <span class="item active" data-name="all">All</span>
+          <span class="item" data-name="bag">Bag</span>
+          <span class="item" data-name="shoe">Shoe</span>
+          <span class="item" data-name="watch">Watch</span>
+          <span class="item" data-name="camera">Camera</span>
+          <span class="item" data-name="headphone">Headphone</span>
+          <span class="item" data-name="food">Food</span>
+          <span class="item" data-name="drink">Drink</span>
+          <span class="item" data-name="flower">Flower</span>
+
+        </div>
+      </nav>
+      <div class="alert alert-warning" role="alert" id="alert-box" style="display: none;">
+        Image not found.
+      </div>
+
+      <!-- filter gamber -->
+      <div class="gallery">
+        <div class="image" data-name="flower"><span><img src="https://images.pexels.com/photos/158302/dahlia-flower-plant-nature-158302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="food"><span><img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" alt=""></span></div>
+        <div class="image" data-name="shoe"><span><img src="shoe-3.jpg" alt=""></span></div>
+        <div class="image" data-name="headphone"><span><img src="headphone-6.jpg" alt=""></span></div>
+        <div class="image" data-name="food"><span><img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="flower"><span><img src="https://images.pexels.com/photos/96920/pexels-photo-96920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="bag"><span><img src="https://images.pexels.com/photos/2393813/pexels-photo-2393813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="laptop"><span><img src="https://images.pexels.com/photos/5588399/pexels-photo-5588399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="flower"><span><img src="https://images.pexels.com/photos/54267/sunflower-blossom-bloom-flowers-54267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="drink"><span><img src="https://images.pexels.com/photos/26558829/pexels-photo-26558829/free-photo-of-upacara.jpeg" alt=""></span></div>
+        <div class="image" data-name="camera"><span><img src="camera-4.jpg" alt=""></span></div>
+        <div class="image" data-name="flower"><span><img src="https://images.pexels.com/photos/542517/pexels-photo-542517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="bag"><span><img src="bag-1.jpg" alt=""></span></div>
+        <div class="image" data-name="headphone"><span><img src="headphone-1.jpg" alt=""></span></div>
+        <div class="image" data-name="camera"><span><img src="camera-1.jpg" alt=""></span></div>
+        <div class="image" data-name="camera"><span><img src="camera-2.jpg" alt=""></span></div>
+        <div class="image" data-name="headphone"><span><img src="headphone-2.jpg" alt=""></span></div>
+        <div class="image" data-name="watch"><span><img src="watch-1.jpg" alt=""></span></div>
+        <div class="image" data-name="shoe"><span><img src="shoe-1.jpg" alt=""></span></div>
+        <div class="image" data-name="shoe"><span><img src="shoe-2.jpg" alt=""></span></div>
+        <div class="image" data-name="camera"><span><img src="camera-3.jpg" alt=""></span></div>
+        <div class="image" data-name="headphone"><span><img src="https://images.pexels.com/photos/610945/pexels-photo-610945.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="food"><span><img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="shoe"><span><img src="https://images.pexels.com/photos/292999/pexels-photo-292999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="drink"><span><img src="https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="laptop"><span><img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="bag"><span><img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="watch"><span><img src="https://images.pexels.com/photos/280250/pexels-photo-280250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="laptop"><span><img src="https://images.pexels.com/photos/40185/mac-freelancer-macintosh-macbook-40185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="watch"><span><img src="https://images.pexels.com/photos/364822/rolex-watch-time-luxury-364822.jpeg" alt=""></span></div>
+        <div class="image" data-name="drink"><span><img src="https://images.pexels.com/photos/339696/pexels-photo-339696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        <div class="image" data-name="drink"><span><img src="https://images.pexels.com/photos/109275/pexels-photo-109275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></span></div>
+        
+        
+      </div>
+    
+    <!-- fullscreen img preview box -->
+    <div class="preview-box">
+      <div class="details">
+        <span class="title">Image Category: <p></p></span>
+        <span class="icon fas fa-times"></span>
+      </div>
+      <div class="image-box">
+    
+        <img src="" alt=""></div>
+    </div>
+    <div class="shadow"></div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    
+    
+  </body>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Zodiac Light Gallery</p>
+    </div>
+  </footer>
+  </html>
